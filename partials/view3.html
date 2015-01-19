@@ -1,0 +1,43 @@
+<section style="padding: 10px;">
+	<div class="row">
+	  <div class="col-lg-6">
+	    <div class="input-group">
+			<input ng-model="description" placeholder="Gist description..." type="text" class="form-control">
+	    </div>
+	  </div>
+	</div><br />
+	<div class="row">
+	  <div class="col-lg-6">
+	    <div class="input-group">
+			<input ng-model="filename" placeholder="Name this file..." type="text" class="form-control">
+	    </div>
+	  </div>
+	</div><br />
+	<div class="row">
+	  <div class="col-lg-6">
+		<textarea ng-model="content" class="form-control" rows="3"></textarea>
+	  </div>
+	</div><br />
+	<div class="action-container col-lg-6">
+		<button class="btn btn-default btn-lg" ng-click="createGist()" type="button">Create public Gist</button>
+	</div>
+</section>
+<div ng-show="showTable">
+<table class="table" id="gistTable">
+	<thead>
+      <tr>
+         <th>Filename</th>
+         <th>Description</th>
+         <th>Content</th>
+      </tr>
+   </thead>
+   <tbody>
+      <tr>
+		<td>{{dataFilename}}</td>
+		<td>{{dataDescription}}</td>
+		<td>{{dataContent}}</td>
+      </tr>
+   </tbody>
+</table>
+</div>
+

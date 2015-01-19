@@ -1,0 +1,22 @@
+<table class="table">
+	<thead>
+      <tr>
+         <th>ID</th>
+         <th>Name</th>
+         <th>Description</th>
+         <th>Forks</th>
+         <th>Size</th>
+         <th>Watchers</th>
+      </tr>
+   </thead>
+   <tbody>
+      <tr ng-repeat = "item in collection">
+		<td>{{item.id}}</td>
+		<td>{{item.name}}</td>
+		<td>{{item.description}}</td>
+		<td>{{item.forks}}</td>
+		<td>{{item.size}}</td>
+		<td>{{item.watchers}}</td>
+      </tr>
+   </tbody>
+</table>

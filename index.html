@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html ng-app="testApp">
+<head>
+	<meta charset="utf-8">
+    <title>Test App</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link href="css/simple-sidebar.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
+    <!-- Scripts -->
+    <script src="vendor/angular.min.js"></script>
+    <script src="vendor/angular-route.min.js"></script>
+</head>
+<body>
+	<header><label>Github API Demo with Octokit Org</label></header>
+    <div id="wrapper">
+        <!-- Sidebar -->
+        <div id="sidebar-wrapper">
+            <ul class="sidebar-nav">
+                <li>
+                    <a href="/#/">Home Page</a>
+                </li>
+                <li>
+                    <a href="/#/view1">Organization Details</a>
+                </li>
+				<li>
+					<a href="/#/view2">Repositories</a>
+				</li>
+				<li>
+					<a href="/#/view3">Create Public Gist</a>
+				</li>
+            </ul>
+        </div>
+    <main>
+    	<ng-view></ng-view>
+    </main>
+	<script src="js/app.js"></script>
+	<script src="js/controllers.js"></script>
+    <script src="js/services.js"></script>
+</body>
+</html>

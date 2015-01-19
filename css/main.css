@@ -1,0 +1,26 @@
+header {
+	background-color: #000;
+	height: 46px;
+	text-align: center;
+	position: fixed;
+	width: 100%;
+	top: 0;
+}
+header label {
+	margin: 0;
+	line-height: 46px;
+	color: #fff;
+	font-size: 20px;
+	font-family: 'Arial'
+}
+#wrapper {
+	margin-top: 46px;
+}
+.action-container {
+	padding-left: 0;
+}
+.action-container button {
+	width: 469px;
+	background-color: rgb(57,118,184);
+	color: #fff;
+}
